@@ -1,0 +1,24 @@
+{
+    "name": "php-packages/fluent",
+    "description": "Readability is the key.",
+    "license": "MIT",
+    "keywords": ["fluent", "interfaces"],
+    "authors": [
+        {
+            "name": "bound1ess",
+            "email": "bound1ess.dev@gmail.com",
+            "role": "developer"
+        }
+    ],
+
+    "require-dev": {
+        "phpspec/phpspec": "2.1.*",
+        "henrikbjorn/phpspec-code-coverage": "1.0.*"
+    },
+
+    "autoload": {
+        "psr-4": {
+            "PhpPackages\\Fluent\\": "src/PhpPackages/Fluent/"
+        }
+    }
+}
