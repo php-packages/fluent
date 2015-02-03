@@ -2,7 +2,8 @@
 
 ## Navigation
 
-- [Idea](#idea)
+- [Installation](#installation)
+- [Usage](#usage)
 - [Additional information](#additional-information)
 
 ## Installation
