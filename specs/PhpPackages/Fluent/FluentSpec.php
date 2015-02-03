@@ -7,4 +7,12 @@ class FluentSpec extends \PhpSpec\ObjectBehavior
     {
         $this->shouldHaveType("PhpPackages\Fluent\Fluent");
     }
+
+    public function it_registers_a_call()
+    {
+        $this->getCalls()->shouldBe([]);
+        $this->registerCall("shouldBeEmpty");
+        $this->getCalls()->shouldBe(["should", "be", "empty"]);
+        $this->clearCalls();
+    }
 }
