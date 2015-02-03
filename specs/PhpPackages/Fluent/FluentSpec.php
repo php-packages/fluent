@@ -14,5 +14,9 @@ class FluentSpec extends \PhpSpec\ObjectBehavior
         $this->registerCall("shouldBeEmpty");
         $this->getCalls()->shouldBe(["should", "be", "empty"]);
         $this->clearCalls();
+
+        $this->getCalls()->shouldBe([]);
+        $this->registerCall("should_has_length", [8]);
+        $this->getCalls()->shouldBe(["should", "has", ["length", [8]]]);
     }
 }

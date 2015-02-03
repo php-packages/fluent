@@ -20,6 +20,12 @@ class Fluent
         $name = strtolower(preg_replace("/([A-Z]{1})/", "_$0", $name));
 
         $this->calls = explode("_", $name);
+
+        if (count($arguments) > 0) {
+            $lastIndex = count($this->calls) - 1;
+
+            $this->calls[$lastIndex] = [$this->calls[$lastIndex], $arguments];
+        }
     }
 
     /**
