@@ -24,8 +24,9 @@ namespace specs\PhpPackages\Fluent
         public function it_brings_in_the_magic(Fluent $fluent)
         {
             $this->setFluent($fluent);
-            $fluent->registerCall("doSomethingCool", [])->shouldBeCalled();
+            $fluent->registerCall("doSomethingCool", [])->shouldBeCalledTimes(2);
             $this->getWrappedObject()->doSomethingCool();
+            $this->getWrappedObject()->doSomethingCool;
         }
     }
 }

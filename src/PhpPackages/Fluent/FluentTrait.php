@@ -55,7 +55,7 @@ trait FluentTrait
      */
     public function __get($name)
     {
-        $this->getFluent()->registerCall($name);
+        $this->getFluent()->registerCall($name, []);
 
         return $this;
     }
