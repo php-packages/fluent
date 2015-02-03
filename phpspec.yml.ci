@@ -1,0 +1,10 @@
+formatter.name: pretty
+
+suites:
+    fluent_suite:
+        namespace: PhpPackages\Fluent
+        src_path: src
+        spec_path: .
+        spec_prefix: specs
+
+# vim: syntax=yaml
