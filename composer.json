@@ -2,6 +2,7 @@
     "name": "php-packages/fluent",
     "description": "Readability is the key.",
     "license": "MIT",
+
     "keywords": ["fluent", "interfaces"],
     "authors": [
         {
@@ -12,6 +13,7 @@
     ],
 
     "require-dev": {
+        "php": ">=5.4.0",
         "phpspec/phpspec": "2.1.*",
         "henrikbjorn/phpspec-code-coverage": "1.0.*"
     },
@@ -20,5 +22,9 @@
         "psr-4": {
             "PhpPackages\\Fluent\\": "src/PhpPackages/Fluent/"
         }
+    },
+
+    "autoload-dev": {
+        "files": ["stubs/PhpPackages/Fluent/FluentTraitTest.php"]
     }
 }
