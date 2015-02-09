@@ -4,6 +4,8 @@ class Fluent
 {
 
     /**
+     * The registered calls.
+     *
      * @var array
      */
     protected $calls = [];
