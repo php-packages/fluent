@@ -1,5 +1,7 @@
 # Fluent [![Build Status](https://travis-ci.org/php-packages/fluent.svg?branch=master)](https://travis-ci.org/php-packages/fluent)
 
+Readability is the key. Version `1.0.1`.
+
 ## Navigation
 
 - [Installation](#installation)
@@ -32,10 +34,10 @@ $a->postCatsInInstagram();
 $a->getFluent()->getCalls(); # => ["jump", "and", "scream", "post", "cats", "in", "instagram"]
 $a->getFluent()->clearCalls();
 
-$a->doThat()->and()->doThis(123, null);
+$a->doThat()->and->doThis(123, null);
 $a->getFluent()->getCalls(); # => ["do", "that", "and", "do", ["this", [123, null]]]
 ```
 
 ## Additional information
 
-*Fluent* is licensed under the MIT license.
+*Fluent* is licensed under the MIT License (MIT).
